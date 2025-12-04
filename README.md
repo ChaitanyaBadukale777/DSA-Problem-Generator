@@ -2,7 +2,7 @@
 
 # Explanation
 
--- I built a DSA GrindHub Portal, which is a smart web application designed to help students and developers practice Data Structures and Algorithms using AI-generated problems.
+I built a DSA GrindHub Portal, which is a smart web application designed to help students and developers practice Data Structures and Algorithms using AI-generated problems.
 
 The backend is developed using Spring Boot (Java), and the frontend is built with HTML, Tailwind CSS, and JavaScript. This combination ensures that the application is fast, secure, and highly responsive.
 
@@ -17,5 +17,3 @@ After validating and cleaning the response, the Spring Boot server sends well-st
 This portal is highly useful in today’s learning environment because it gives users an unlimited supply of fresh practice problems instead of relying on static textbooks.
 
 Overall, this project demonstrates my ability to build secure production-ready backend systems, integrate AI services, and design dynamic, interactive user interfaces.
-
---

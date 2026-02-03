@@ -27,6 +27,11 @@ public class GeminiService {
 
     public DsaQuestionResponse generateQuestion(String level) {
 
+        // Fail fast with a clear message if the API key isn't configured
+        if (apiKey == null || apiKey.trim().isEmpty()) {
+                throw new IllegalStateException("GEMINI_API_KEY environment variable is not set. Set it and restart the app to enable generative requests.");
+        }
+
         String prompt =
                 "Generate a unique DSA word problem suitable for competitive programming.\n" +
                 "Difficulty: " + level + "\n" +

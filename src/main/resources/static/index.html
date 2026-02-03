@@ -210,7 +210,9 @@
     </div>
 
     <script>
-        const API_BASE_URL = 'http://localhost:8081/api';
+        // Use the current page origin so the frontend works in codespaces/preview environments
+        // (avoids hardcoding localhost which can cause "Failed to fetch" when the page is served remotely).
+        const API_BASE_URL = `${window.location.origin}/api`;
         const generateBtn = document.getElementById('generate-btn');
         const difficultySelect = document.getElementById('difficulty');
         const loadingDiv = document.getElementById('loading');
